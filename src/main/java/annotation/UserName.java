@@ -1,12 +1,12 @@
+package annotation;
+
 import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 
-@EqualsAndHashCode
 @AllArgsConstructor
-@ToString
-public class UserId {
+@ToString(includeFieldNames = false)
+public class UserName {
     @Getter
     public final String value;
 }

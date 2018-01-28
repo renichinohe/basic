@@ -1,3 +1,5 @@
+package handwriting;
+
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

@@ -1,14 +1,14 @@
+package annotation;
+
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.ToString;
 
 @EqualsAndHashCode
 @AllArgsConstructor
-public class NormalUserName {
+@ToString(includeFieldNames = false)
+public class Address {
     @Getter
     public final String value;
-
-    public String toString() {
-        return "UserName(" + value + ")";
-    }
 }

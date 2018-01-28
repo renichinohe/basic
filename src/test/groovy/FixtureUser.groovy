@@ -1,3 +1,7 @@
+import annotation.Address
+import annotation.User
+import annotation.UserId
+import annotation.UserName
 import groovy.transform.ToString
 
 @ToString(includeFields = false)

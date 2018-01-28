@@ -1,12 +1,16 @@
+package handwriting;
+
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.ToString;
 
 @EqualsAndHashCode
 @AllArgsConstructor
-@ToString(includeFieldNames = false)
-public class Address {
+public class NormalAddress {
     @Getter
     public final String value;
+
+    public String toString() {
+        return "Address(" + value + ")";
+    }
 }

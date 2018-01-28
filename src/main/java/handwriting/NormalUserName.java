@@ -1,14 +1,16 @@
+package handwriting;
+
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 @EqualsAndHashCode
 @AllArgsConstructor
-public class NormalUserId {
+public class NormalUserName {
     @Getter
     public final String value;
 
     public String toString() {
-        return "UserId(value=" + value + ")";
+        return "UserName(" + value + ")";
     }
 }

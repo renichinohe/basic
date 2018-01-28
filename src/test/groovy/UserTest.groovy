@@ -1,3 +1,11 @@
+import annotation.Address
+import annotation.User
+import annotation.UserId
+import annotation.UserName
+import handwriting.NormalAddress
+import handwriting.NormalUser
+import handwriting.NormalUserId
+import handwriting.NormalUserName
 import spock.lang.Specification
 
 class UserTest extends Specification{

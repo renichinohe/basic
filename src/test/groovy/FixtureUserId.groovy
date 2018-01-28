@@ -1,3 +1,4 @@
+import annotation.UserId
 import groovy.transform.ToString
 
 @ToString
