@@ -1,4 +1,4 @@
-package handwriting;
+package normal;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -6,11 +6,11 @@ import lombok.Getter;
 
 @EqualsAndHashCode
 @AllArgsConstructor
-public class NormalUserName {
+public class NormalAddress {
     @Getter
     public final String value;
 
     public String toString() {
-        return "UserName(" + value + ")";
+        return "Address(" + value + ")";
     }
 }
