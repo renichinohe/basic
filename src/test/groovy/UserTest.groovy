@@ -1,23 +1,23 @@
+import annotation.User
+import normal.NormalUser
 import spock.lang.Specification
 
 class UserTest extends Specification{
 
-    static User user
-    static NormalUser normalUser
+    def test() {
+        def save = System.out
 
-    def setup() {
-        user = new User(new UserId("1"), new UserName("太郎"), new Address("東京"))
-        normalUser = new NormalUser(new NormalUserId("1"), new NormalUserName("太郎"), new NormalAddress("東京"))
+        def printStream = Mock(PrintStream)
+        System.out = printStream
 
-        println user
-        println normalUser
+        when:
+        print User.createUser()
+        print NormalUser.createNormalUser()
+
+        then:
+        2 * printStream.print("User(id=UserId(value=1), name=UserName(太郎), address=Address(東京))")
+
+        cleanup:
+        System.out = save
     }
-
-    def "test"() {
-        expect:
-        user.id.getValue() == normalUser.normalUserId.getValue()
-        user.name.getValue() == normalUser.normalUserName.getValue()
-        user.address.getValue() == normalUser.normalAddress.getValue()
-    }
-
 }

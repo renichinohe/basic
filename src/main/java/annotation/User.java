@@ -1,3 +1,5 @@
+package annotation;
+
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -13,4 +15,8 @@ public class User {
     private final UserName name;
     @Getter
     private final Address address;
+
+    public static User createUser(){
+        return new User(new UserId("1"), new UserName("太郎"), new Address("東京"));
+    }
 }

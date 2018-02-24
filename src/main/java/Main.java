@@ -1,3 +1,8 @@
+import annotation.Address;
+import annotation.User;
+import annotation.UserId;
+import annotation.UserName;
+
 public class Main {
     public static void main(String args[]){
 

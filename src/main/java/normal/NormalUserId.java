@@ -1,14 +1,16 @@
+package normal;
+
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 @EqualsAndHashCode
 @AllArgsConstructor
-public class NormalAddress {
+public class NormalUserId {
     @Getter
     public final String value;
 
     public String toString() {
-        return "Address(" + value + ")";
+        return "UserId(value=" + value + ")";
     }
 }

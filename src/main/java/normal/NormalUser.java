@@ -1,3 +1,5 @@
+package normal;
+
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -14,5 +16,9 @@ public class NormalUser {
 
     public String toString() {
         return "User(" + "id=" + normalUserId + ", name=" + normalUserName + ", address=" + normalAddress + ')';
+    }
+
+    public static NormalUser createNormalUser(){
+        return new NormalUser(new NormalUserId("1"), new NormalUserName("太郎"), new NormalAddress("東京"));
     }
 }

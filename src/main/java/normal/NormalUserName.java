@@ -1,12 +1,16 @@
+package normal;
+
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.ToString;
 
 @EqualsAndHashCode
 @AllArgsConstructor
-@ToString(includeFieldNames = false)
-public class Address {
+public class NormalUserName {
     @Getter
     public final String value;
+
+    public String toString() {
+        return "UserName(" + value + ")";
+    }
 }
